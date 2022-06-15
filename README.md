@@ -35,3 +35,16 @@ kevin|male|1111
 ### code
 ```public static void main```
 `Hello`
+
+
+## java version
+
+- javaSE standard
+- javaME 已死
+- javaEE web/server
+
+## JDK JRE JVM 是啥
+- JDK: Java Development Kit include JRE and JVM
+- JRE: Java Runtime Environment include JVM
+- JVM: Java Virtual Machine 
+![JDK](https://devops.com.vn/wp-content/uploads/2018/07/jdk_jre_jvm.png)
