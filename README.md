@@ -14,7 +14,7 @@
 ***
 
 ### 圖片
-![Hello](https://zh.wikipedia.org/wiki/%E7%8C%BF%E9%A3%9B%E8%92%9C%E5%B1%B1#/media/File:Sarutobi.jpg)
+![Hello](https://www.9900news.com/images/vimg/2104/202107130500070.webp)
 
 ### link
 [go](https://github.com/Shuaigle)
