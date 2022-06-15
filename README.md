@@ -18,3 +18,16 @@
 
 ### link
 [go](https://github.com/Shuaigle)
+
+### list
+1. A
+2. B
+3. C
+- A
+- B
+- C
+
+### table
+name|sex|birth
+--|--|--|
+kevin|male|1111
