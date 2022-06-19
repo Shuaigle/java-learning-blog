@@ -40,11 +40,21 @@ kevin|male|1111
 ## java version
 
 - javaSE standard
-- javaME 已死
+- ~~javaME~~ ~~已死~~
 - javaEE web/server
 
 ## JDK JRE JVM 是啥
 - JDK: Java Development Kit include JRE and JVM
 - JRE: Java Runtime Environment include JVM
 - JVM: Java Virtual Machine 
-![JDK](https://devops.com.vn/wp-content/uploads/2018/07/jdk_jre_jvm.png)
+- ![JDK](https://devops.com.vn/wp-content/uploads/2018/07/jdk_jre_jvm.png)
+
+## Install java17 on Mac
+[Install](https://www.youtube.com/watch?v=SdKIBGnkhDY)
+---
+check if success-> open terminal ```java -version```
+
+## Install intellij IDEA
+[IDEA](https://www.jetbrains.com/idea/download/#section=mac)
+
+## 
