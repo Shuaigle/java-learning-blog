@@ -61,6 +61,12 @@ check if success-> open terminal ```java -version```
 - when using `new` -> you construct object with new memory space names **heap**
 - temp variable stores in **stack**
 
+## `static`
+`static` belongs to the class, it can only be used by class\
+the `static {}` block is the first block that loaded when `new` an object\
+it was superior to the constructor\
+static block -> constructor block\
+
 
 
 
