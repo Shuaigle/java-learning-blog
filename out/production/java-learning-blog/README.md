@@ -62,10 +62,31 @@ check if success-> open terminal ```java -version```
 - temp variable stores in **stack**
 
 ## `static`
-`static` belongs to the class, it can only be used by class\
-the `static {}` block is the first block that loaded when `new` an object\
-it was superior to the constructor\
-static block -> constructor block\
+- `static` belongs to the class, it can only be used by class\
+- the `static {}` block is the first block that loaded when `new` an object\
+- it was superior to the constructor\
+- static block -> constructor block\
+- `static` method can not be override by child class, since it was not an instance method.
+
+## `final`
+- if `public final Person {}` , then this class can not be inherited. Since the final appeared.
+
+## `abstract`
+- `abstract` is a class or method modifier
+- some objects/class inherits from `abstract` method/class should override the methods of its parent's methods.
+- `abstract` class can not be `new`
+
+## `interface`
+- can not write method -> always `abstract`
+- default modifier of method is `public abstract`
+- when a class `implements` an interface -> this class must `@Override` each method of **interface**
+
+## nested class
+- initiate inner class by outer class
+- inner class can get outer class's private attributes
+- a java class can only exist a `public` class
+
+
 
 
 
