@@ -1,5 +1,11 @@
 package com.lin;
 
+/*
+* if class inherit Thread, it has limitation since it can only
+* inherit from one class. Use Runnable interface to avoid the
+* limitation.
+* */
+
 public class MultiThread extends Thread{
     @Override
     public void run() {
