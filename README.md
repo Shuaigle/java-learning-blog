@@ -85,3 +85,34 @@ check if success-> open terminal ```java -version```
 - initiate inner class by outer class
 - inner class can get outer class's private attributes
 - a java class can only exist a `public` class
+
+---
+# TCP/IP
+
+---
+- ip
+  - ipv4/ipv6
+  - public/private
+- port
+  - public: 0~ 1023
+  - process: Tomcat: 8080/ MySQL: 3306
+  - dynamic
+- 192.168.16.124:8888
+- four layers
+  - application: http/snmp/smtp/dns
+  - transport: tcp
+  - network: ip
+  - data and link: ethernet/ieee 802.1A
+  
+
+
+
+  
+
+
+
+
+
+
+
+
