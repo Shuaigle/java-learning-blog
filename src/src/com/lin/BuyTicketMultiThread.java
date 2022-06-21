@@ -15,7 +15,7 @@ public class BuyTicketMultiThread implements Runnable{
 //                e.printStackTrace();
 //            }
 
-            System.out.println(Thread.currentThread().getName() + " get " + ticketNums-- + "th ticket");
+            System.out.println(Thread.currentThread().getName() + " gets " + ticketNums-- + "th ticket");
         }
     }
 
