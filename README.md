@@ -105,6 +105,14 @@ check if success-> open terminal ```java -version```
   - data and link: ethernet/ieee 802.1A
   
 
+# Thread
+
+## properly stop a thread
+- `thread.interrupt()` is a perfect way to stop a thread.\
+- other than **flag** method, `interrupt` can immediately stop an interruptable thread.
+- **flag** has to run through all block of call which spent more time and may not interrupt the thread.
+
+
 
 
   
