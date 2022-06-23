@@ -113,6 +113,11 @@ check if success-> open terminal ```java -version```
 - **flag** has to run through all block of call which spent more time and may not interrupt the thread.
 
 
+# [JVM](https://docs.oracle.com/javase/specs/jvms/se17/jvms17.pdf) (Java Virtual Machine)
+![JVM](https://simplesnippets.tech/wp-content/uploads/2018/03/java-execution-flow-diagram-1280x720.jpg)
+
+![JVM wiki](https://upload.wikimedia.org/wikipedia/commons/d/dd/JvmSpec7.png)
+
 
 
   
