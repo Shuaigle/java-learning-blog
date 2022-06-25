@@ -124,8 +124,16 @@ check if success-> open terminal ```java -version```
 ## Connect to MySQL through terminal
 1. set the PATH variable -> mysql/bin/
 2. `mysql -u root -p` and enter the key
-3. 
-
+3. `show database;` list all dbs
+4. `update mysql.user set authentication_string=password('yourpassword') where user='root' and Host='localhost'` change the password
+5. `use database_name;` switch database by name
+6. `show tables;` show tables in database
+7. `describe table_name;` show Fields in the table by name
+8. `create database your_database_name`
+9. `exit`
+10. `--` comment in sql
+11. `/**/` multi-line comment in sql
+12. 
   
 
 
