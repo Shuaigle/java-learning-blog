@@ -118,7 +118,13 @@ check if success-> open terminal ```java -version```
 
 ![JVM wiki](https://upload.wikimedia.org/wikipedia/commons/d/dd/JvmSpec7.png)
 
-
+# MySQL
+## Download
+[Download MySQL](https://www.sqlshack.com/how-to-install-mysql-database-server-8-0-19-on-windows-10/)
+## Connect to MySQL through terminal
+1. set the PATH variable -> mysql/bin/
+2. `mysql -u root -p` and enter the key
+3. 
 
   
 
