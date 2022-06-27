@@ -179,12 +179,29 @@ Alternatively set in my.ini file `character-set-server=utf8`
   - `DELETE FROM tablename WHERE colname=value;`
   - `TRUNCATE tablename` -> clean table with data, but structure still exists
     - auto count will re-count
-  - InnoDB delete table and restart db -> auto add will restart from 1 -> since data store in cache -> restart will miss the data
-  - MyISAM -> continue counting the auto add value -> store in disk (file)
+  - InnoDB delete table and restart db -> auto increment will restart from 1 -> since data store in cache -> restart will miss the data
+  - MyISAM -> continue counting the auto increment value -> store in disk (file)
 ## DQL data query language
-  
-
-
+- select
+  - `SELECT * FROM tablename` select all
+  - `SELECT colname1 AS c1, colname2 AS c2 FROM tablename AS tb`
+  - `SELECT CONCAT(Concatvalue, old_colname) AS new_colname FROM tablename`
+  - `SELECT DISTINCT` 
+  - `SELECT VERSION()` select system version
+  - `SELECT @@auto_increment_increment`
+- where
+  - return value => boolean
+  - [like](https://www.w3schools.com/sql/sql_like.asp)
+  - explicit vs implicit
+  - `SELECT * FROM table WHERE colname BETWEEN val1 AND val2`
+  - `SELECT colname FORM table WHERE colname2 LIKE 'pattern%'` match the pattern*****
+  - `SELECT colname FORM table WHERE colname2 LIKE 'pattern_'` match the pattern*
+  - `SELECT colname FORM table WHERE colname2 LIKE '%pattern%'`
+  - `SELECT colname FORM table WHERE colname2 IN(v1, v2, v3)`
+- **[join](https://www.w3schools.com/sql/sql_join.asp)**
+  - ![join](https://user-images.githubusercontent.com/47733530/152173611-fe092793-7eb2-4b1a-a4ce-c0ed807c1b6e.png)
+  - [where clause vs on clause](https://stackoverflow.com/questions/354070/sql-join-where-clause-vs-on-clause)
+  - 
 
 
 
