@@ -118,7 +118,7 @@ check if success-> open terminal ```java -version```
 
 ![JVM wiki](https://upload.wikimedia.org/wikipedia/commons/d/dd/JvmSpec7.png)
 
-# MySQL
+# Introduction to MySQL
 ## Download
 [Download MySQL](https://www.sqlshack.com/how-to-install-mysql-database-server-8-0-19-on-windows-10/)
 ## Connect to MySQL through terminal
@@ -133,8 +133,36 @@ check if success-> open terminal ```java -version```
 9. `exit`
 10. `--` comment in sql
 11. `/**/` multi-line comment in sql
-12. 
-  
+## database operations
+1. `CREATE DATABASE IF NOT EXIST database;` create database
+2. `DROP DATABASE database;` delete database
+3. ``USE `database`; ``
+4. ``SELECT `user` FROM student;``
+## [MyISAM vs InnoDB](https://hevodata.com/learn/myisam-vs-innodb/)
+- My Indexed Sequential Access Method
+- InnoDB has **row-level locking**. MyISAM only has full table-level locking.
+- InnoDB has what is called **referential integrity** which involves supporting foreign keys (RDBMS) and relationship constraints, MyISAM does not (DMBS).
+- InnoDB supports **transactions**, which means you can commit and roll back. MyISAM does not.
+- InnoDB is more reliable as it uses **transactional logs** for auto recovery. MyISAM does not.
+- InnoDB is faster to write, MyISAM is faster to read
+- InnoDB supports to ACID
+- InnoDB's file: *.frm and ibdata1 files
+- MyISAM's file
+  - *.frm -> table structure
+  - *.MYD -> data
+  - *.MYI -> index
+## table setting
+`charset=utf8` implements mandarin\
+Alternatively set in my.ini file `character-set-server=utf8`
+## update and delete table
+- `ALTER TABLE teacher RENAME AS tc`
+- `ALTER TABLE tc ADD age INT(9)`
+- `ALTER TABLE tc MODIFY age VARCHAR(9)`
+  - MODIFY the data type of the column
+- `ALTER TABLE tc CHANGE age age1 INT(1)`
+  - change column name
+- [MODIFY vs CHANGE](https://stackoverflow.com/questions/14767174/modify-column-vs-change-column)
+- `ALTER TABLE tc DROP age1`
 
 
 
