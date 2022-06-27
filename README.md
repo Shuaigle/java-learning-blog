@@ -163,9 +163,26 @@ Alternatively set in my.ini file `character-set-server=utf8`
   - change column name
 - [MODIFY vs CHANGE](https://stackoverflow.com/questions/14767174/modify-column-vs-change-column)
 - `ALTER TABLE tc DROP age1`
-
-
-
+- `DROP TABLE IF EXISTS tc`
+## ADD FOREIGN KEY
+- `ALTER TABLE student ADD CONSTRAINT FK_gradeid FOREIGN KEY(gradeid) REFERENCES grade(gradeid)` 
+- if db exists too many relational tables, it will add fuzzy when deleting
+- We only store merely table in sql, do not add any relation
+- we add relation with code
+## [DML](https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/) data manipulation language
+- insert
+  - `INSERT INTO tablename(colname1, colname2) VALUES('value1', 'value2'), ('value1', 'value2'), ('value1', 'value2')`
+- update
+  - `UPDATE tablename SET colname1='value1' WHERE colname2=value2`
+  - [where condition operators](https://www.dataquest.io/blog/sql-operators/#:~:text=What%20are%20SQL%20operators%3F,buttons%20on%20a%20calculator%20function.)
+- delete
+  - `DELETE FROM tablename WHERE colname=value;`
+  - `TRUNCATE tablename` -> clean table with data, but structure still exists
+    - auto count will re-count
+  - InnoDB delete table and restart db -> auto add will restart from 1 -> since data store in cache -> restart will miss the data
+  - MyISAM -> continue counting the auto add value -> store in disk (file)
+## DQL data query language
+  
 
 
 
