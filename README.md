@@ -201,7 +201,17 @@ Alternatively set in my.ini file `character-set-server=utf8`
 - **[join](https://www.w3schools.com/sql/sql_join.asp)**
   - ![join](https://user-images.githubusercontent.com/47733530/152173611-fe092793-7eb2-4b1a-a4ce-c0ed807c1b6e.png)
   - [where clause vs on clause](https://stackoverflow.com/questions/354070/sql-join-where-clause-vs-on-clause)
-  - 
+  
+## [Transaction](https://www.w3resource.com/sql/controlling-transactions.php#:~:text=A%20transaction%20is%20a%20sequence,(undone%20from%20the%20database).)
+1. `SET autocommit = 0`
+2. `START TRANSACTION` necessary
+3. `UPDATE account SET money=money+100 WHERE name = 'a'`
+4. `UPDATE account SET money=money-100 WHERE name = 'b'`
+5. `COMMIT` if COMMIT -> data will save durability
+6. `ROLLBACK` if transaction failed -> rollback
+7. `SET autocommit = 1` default = 1
+
+
 
 
 
