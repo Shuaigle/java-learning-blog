@@ -211,7 +211,37 @@ Alternatively set in my.ini file `character-set-server=utf8`
 6. `ROLLBACK` if transaction failed -> rollback
 7. `SET autocommit = 1` default = 1
 
+## index
+- primary key
+  - cannot duplicate
+- unique key
+  - value cannot duplicate but can contain only one null value
+- key/index
+- fulltext
+  - created on text-based columns to speed up queries and DML operations
 
+# Java Bean
+- writing style
+  - non argument constructor
+  - attribute need to be private
+  - need get/set method
+- generally used to implement ORM
+  - table ---> class
+  - string ---> attribute
+  - column ---> object\
+  
+```
+  class People {
+       private int id;
+       private String name;
+       private String address;     
+   }
+   
+  class A {
+      new People(1, "lin", "here");
+      new People(2, "tian", "there");
+  }
+```
 
 
 
